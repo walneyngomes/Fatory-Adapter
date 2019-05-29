@@ -1,5 +1,5 @@
 
-public class MotoHonda implements Moto {
+public class carroadapter implements Moto {
 
 	private Carro carro;
 
@@ -7,7 +7,7 @@ public class MotoHonda implements Moto {
 		FactoryCarro carro = new FactoryCarro();
 
 		if (carro.obterCarro(escolha).equals(null)) {
-			throw new CarroPointerException("Não existe carro para adaptar");
+			throw new CarroPointerException("NÃ£o existe carro para adaptar");
 
 		} else {
 			this.carro = carro.obterCarro(escolha);
